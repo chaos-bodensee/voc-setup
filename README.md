@@ -1,6 +1,6 @@
  Video Streaming - Ansible Setup
 ====================================
-Ansible Setup for the VOC *(Video Operation Center)* from the [Toolbox Bodensee e.V.](https://toolbox-bodensee.de).
+Ansible Setup for the VOC-Setup *(Video Operation Center)* from the [Toolbox Bodensee e.V.](https://toolbox-bodensee.de/).
 
 ![Toolbox VOC](.github/toolbox-voc.svg "Toolbox Video Operation Center")
 
@@ -24,9 +24,10 @@ git submodule update --init --recursive
 
  How does our Setup work?
 -------
- + [overview/](https://github.com/ToolboxBodensee/toolbox-voc_ansible/blob/master/overview/README.md)
+We try to explain it in the "[overview/](https://github.com/chaos-bodensee/voc-setup/blob/master/overview/README.md)" Folder. Including a simplified getting-started guide.
 
  Questions about this setup?
 ------------------------------
 L3D will explain it to you if you invite him to a [Tschunk](https://entropia.de/Tschunk).<br/>
 or ask the awesome c3voc. They developed it! They are awesome!
+<!-- Why moved away from toolbox github repo? Toolbox decided to force everyone to move to gitlab. ALL commits on github where forcefully overwritten. Github is only a Mirror and no master. It was a very stressful situation and this repo is now moved away to keep its history! -->

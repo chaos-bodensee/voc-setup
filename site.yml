@@ -19,7 +19,9 @@
    - ssh-auth
    - sshd
    - config
+   - user
   roles:
+    - manage_users
     - ssh_authorized_keys
     - sshd
   vars: 

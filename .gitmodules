@@ -58,3 +58,6 @@
 [submodule "roles/base-packages"]
 	path = roles/base-packages
 	url = https://github.com/chaos-bodensee/role-base_packages.git
+[submodule "roles/manage-users"]
+	path = roles/manage-users
+	url = https://github.com/chaos-bodensee/role-manage_users.git
