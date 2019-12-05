@@ -4,13 +4,13 @@
 
 ##  which room is this encoder for
 ##  (Maybe you want to overwrite this value in the host_vars)
-room_fahrplan_name: 'ruum42'
+room_fahrplan_name: 'oio'
 
 ##  on which event are you
-voc_event_acronym: 'tdott'
+voc_event_acronym: '36c3'
 
 ##  do we want to stream HD
-enable_hd_stream: true
+enable_hd_stream: false
 
 ##  do we want to stream SD
 enable_sd_stream: false
@@ -35,6 +35,7 @@ admins:
   - raoul
   - l3d
   - wolf
+  - adorfer
 
 users:
   l3d:
@@ -56,38 +57,41 @@ users:
    - raoul@ccczh
   wolf:
    - wolf@rotkaeppchen
+  oio:
+   - l3d@pinkie.l3d.yt
+   - l3d@backup.l3d.yt
+   - l3d@derpy.l3d.yt
+   - l3d@mobile.l3d.yt
+   - l3d@business.wingcon.com
+   - l3d@backup-rsa.l3d.yt
 
-sshd_default_allowed_users:
-  - toolbox
-  - root
-  - l3d
-  - ansible
-  - raoul
-  - wolf
-
-sshd_default_allowed_groups:
-  - toolbox
-  - root
-  - l3d
-  - ansible
-  - raoul
-  - wolf
+github_users:
+  l3d:
+    - do1jlr
+  adorfer:
+    - adorfer
+  oio:
+    - adorfer
+    - do1jlr
 
 accounts:
   - l3d
   - toolbox
   - raoul
   - wolf
+  - adorfer
+  - oio
 
-only_allow_ed25519: true
+# It is recomended to set only_allow_ed25519: true
+only_allow_ed25519: false
 ssh_public_key_store: 'admin_ssh_keys'
 
 
 # some variables for the self-written voc specific playbooks
-obs_user: toolbox
-username: toolbox
-i3wm_user: toolbox
-copy_to_user: toolbox
+username: oio
+obs_user: '{{ username }}'
+i3wm_user: '{{ username }}'
+copy_to_user: '{{ username }}'
 
 # Font for the Toolbox
 # primarly needed for OBS

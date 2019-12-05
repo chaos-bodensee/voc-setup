@@ -8,7 +8,7 @@
   tags:
     - default
   vars:
-    - ansible_ssh_user: 'ansible'
+    - ansible_ssh_user: 'l3d'
 
 - name: Apply basic ssh config on all hosts
   hosts: all
@@ -21,11 +21,11 @@
    - config
    - user
   roles:
-    - manage_users
+    - manage-users
     - ssh_authorized_keys
     - sshd
   vars: 
-    - ansible_ssh_user: 'ansible'
+    - ansible_ssh_user: 'l3d'
 
 - name: Apply common basic config on all hosts
   hosts: all
@@ -41,8 +41,6 @@
     - home_environment
     - base-packages
     - copy_files
-  vars: 
-    - ansible_ssh_user: 'ansible'
 
 - name: Install useful tools
   hosts: all
@@ -102,31 +100,32 @@
   roles:
     - decklink-debugger
 
-- name: Install voctomix
-  hosts: encoder
-  tags: 
-   - stream
-   - voctomix
-   - config
-  roles:
-    - voctomix
-
-#- name: Install obs-studio
+#- name: Install voctomix
 #  hosts: encoder
 #  tags: 
 #   - stream
-#   - obs
+#   - voctomix
+#   - config
 #  roles:
-#    - obs-studio
+#    - voctomix
 
-- name: Install obs-studio setup
-  hosts: encoder
-  tags: 
-   - stream
-   - obs-setup
-   - config
-  roles:
-    - toolbox-obs-setup
+# we stoped to support obs
+# - name: Install obs-studio
+#   hosts: encoder
+#   tags: 
+#    - stream
+#    - obs
+#   roles:
+#     - obs-studio
+
+# - name: Install obs-studio setup
+#   hosts: encoder
+#   tags: 
+#    - stream
+#    - obs-setup
+#    - config
+#   roles:
+#     - toolbox-obs-setup
 
 - name: Install Toolbox font
   hosts: all
@@ -145,39 +144,40 @@
   roles:
   - crs-tools
 
-- name: install php for voc tracker
-  hosts: tracker
-  tags:
-   - config
-   - php
-   - tracker
-   - track
-   - traktor
-  roles:
-    - php
+# we crrently do not support tracker
+# - name: install php for voc tracker
+#  hosts: tracker
+#  tags:
+#   - config
+#   - php
+#   - tracker
+#   - track
+#   - traktor
+#  roles:
+#    - php
 
-- name: install common voc_encoders stuff
-  hosts: encoder
-  tags:
-   - voc
-   - pipeline
-   - voc_encoders
-   - encode
-   - encoders
-   - encoder
-   - config
-  roles:
-   - voc_encoders
-   - voc_mixer
+#- name: install common voc_encoders stuff
+#  hosts: encoder
+ ## tags:
+#   - voc
+#   - pipeline
+#   - voc_encoders
+#   - encode
+#   - encoders
+#   - encoder
+#   - config
+#  roles:
+#   - voc_encoders
+#   - voc_mixer
 
-- name: install voc tracker
-  hosts: tracker
-  tags:
-   - voc
-   - config
-   - pipeline
-   - tracker
-   - track
-   - traktor
-  roles:
-    - voc_tracker
+# - name: install voc tracker
+#   hosts: tracker
+#   tags:
+#    - voc
+#    - config
+#    - pipeline
+#    - tracker
+#    - track
+#    - traktor
+#   roles:
+#     - voc_tracker
