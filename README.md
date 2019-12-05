@@ -9,7 +9,7 @@ Ansible is a radically simple IT automation engine that automates cloud provisio
  Usage:
 -------
 This git repository contains git submodules. To see our complete setup you have to clone them too!
-You need [git-lfs](https://git-lfs.github.com/) to clone all parts of this repository!
+It is inspired by the awesome [C3VOC](https://c3voc.de) and their [content-management](https://github.com/voc/cm.git) Git Repository.
 
 ```
 # Clone the Git with submodules
@@ -20,11 +20,13 @@ git submodule update --init --recursive
 
  Playbooks:
 ------------
-+ ``site.yml``: Setup voctocore ans obs on video encoder pc.
++ ``site.yml``: Setup voctocore on video encoder pc.
+
 
  How does our Setup work?
 -------
 We try to explain it in the "[overview/](https://github.com/chaos-bodensee/voc-setup/blob/master/overview/README.md)" Folder. Including a simplified getting-started guide.
+
 
  Questions about this setup?
 ------------------------------
