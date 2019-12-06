@@ -8,7 +8,7 @@
   tags:
     - default
   vars:
-    - ansible_ssh_user: 'l3d'
+    - ansible_ssh_user: 'ansible'
 
 - name: Apply basic ssh config on all hosts
   hosts: all
@@ -25,7 +25,7 @@
     - ssh_authorized_keys
     - sshd
   vars: 
-    - ansible_ssh_user: 'l3d'
+    - ansible_ssh_user: 'ansible'
 
 - name: Apply common basic config on all hosts
   hosts: all
@@ -89,7 +89,7 @@
    - config
   roles:
     - voc_common
-    - graphic
+#    - graphic
     - blackmagic
 
 - name: Install debugger
