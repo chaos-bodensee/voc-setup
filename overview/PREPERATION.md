@@ -2,6 +2,9 @@
 =====================
 Here are the things you have to prepare bevor running this Playbook:
 
+Please excuse me, but this file is not ready.
+Please give L3D a ping if you are more interested in this file!
+
  * Make sure you have the latest Ansible Version installed on you local computer
  * Make sure ``$HOME/ansible`` exists
  * You have this repository cloned inclusive all submodules

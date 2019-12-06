@@ -2,6 +2,15 @@
  Hardware we use:
 ----------------
 
+```
+TODO: Expand and fix me!
+
+
+WARNING
+This File is outdated!
+
+```
+
 + Encoder PC:
   * Gaming Tower PC ``(from L3D)``
     - Graphic Card: ``Radeon HD 5850`` [Info](https://www.gamestar.de/hardware/amd-radeon-hd-5850,79.html)

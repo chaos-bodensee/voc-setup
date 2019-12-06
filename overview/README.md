@@ -1,27 +1,27 @@
- Overview
+ Übersicht
 ================
-*How does the VOC Toolbox Setup Work*
+*Wie dieses VOC Setup funktioniert*
 
 
-### Hardware we Use
- + [INVENTORY.md](https://github.com/ToolboxBodensee/toolbox-voc_ansible/blob/master/overview/INVENTORY.md)
+### Hardware, die wir verwenden
+ + [INVENTORY.md](https://github.com/chaos-bodensee/voc-setup/blob/master/overview/INVENTORY.md) ``ACHTUNG, veraltet``
 
-This is a list of all the Hardware we use in the Video Streaming in the Toolbox
+Eine Auflistung der Hardware, die aktuell im Einsatz ist...
 
 
- How is the Hardware connected
+ Verkabelung
 ---------------------------------
-This is a overview how the Hardware is connected in the Toolbox:
+Eine Übersicht, wie die hardware verbunden ist
 
-![connect.svg](https://github.com/ToolboxBodensee/toolbox-voc_ansible/blob/master/overview/connect.svg "Toolbox VOC")
+![connect.svg](https://github.com/chaos-bodensee/voc-setup/blob/master/overview/connect.svg "Toolbox VOC")
 
 
- How dows our VOC Pipline look like?
+ VOC Pipeling
 -----------------------------------------
 
-![signal_path.svg](https://github.com/ToolboxBodensee/toolbox-voc_ansible/blob/master/overview/signal_path.svg "Toolbox VOC")
+![signal_path.svg](https://github.com/chaos-bodensee/voc-setup/blob/master/overview/signal_path.svg "VOC Setup - Signalpfad")
 
 
-### How to prepare the Hardware
+### Hardware vorbereiten
  + [PREPERATION.md](https://github.com/ToolboxBodensee/toolbox-voc_ansible/blob/master/overview/PREPERATION.md)
  
