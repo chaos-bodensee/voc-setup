@@ -33,3 +33,11 @@ We try to explain it in the "[overview/](https://github.com/chaos-bodensee/voc-s
 L3D will explain it to you if you invite him to a [Tschunk](https://entropia.de/Tschunk).<br/>
 or ask the awesome c3voc. They developed it! They are awesome!
 <!-- Why moved away from toolbox github repo? Toolbox decided to force everyone to move to gitlab. ALL commits on github where forcefully overwritten. Github is only a Mirror and no master. It was a very stressful situation and this repo is now moved away to keep its history! -->
+
+ How to understand the single part of this ansible?
+---------------------------------------------------
+
+The playbook is defined in the ``site.yml`` File. There are some ``roles`` defined, that will be executed.
+More details what the roles do are usually documented in the single roles-README. The configuration of all roles are defined in the group_vars ans host_vars.
+
+You can find the inventory in ``ansible/hosts.ini``!
