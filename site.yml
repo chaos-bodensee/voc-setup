@@ -42,6 +42,16 @@
     - base-packages
     - copy_files
 
+- name: stay awake
+  hosts: all
+  tags:
+    - sleep
+    - awake
+    - suspend
+    - no_sleep
+  roles:
+    - no_sleep
+ 
 - name: Install useful tools
   hosts: all
   tags: 
@@ -68,16 +78,6 @@
     - i3wm
     - xrandr
 
-- name: stay awake
-  hosts: all
-  tags:
-    - sleep
-    - awake
-    - suspend
-    - no_sleep
-  roles:
-    - no_sleep
- 
 - name: Install video drivers
   hosts: encoder
   tags: 
@@ -89,7 +89,6 @@
    - config
   roles:
     - voc_common
-#    - graphic
     - blackmagic
 
 - name: Install debugger
@@ -99,6 +98,11 @@
    - blackmagic
   roles:
     - decklink-debugger
+
+
+
+
+
 
 #- name: Install voctomix
 #  hosts: encoder
@@ -144,18 +148,6 @@
   roles:
   - crs-tools
 
-# we crrently do not support tracker
-# - name: install php for voc tracker
-#  hosts: tracker
-#  tags:
-#   - config
-#   - php
-#   - tracker
-#   - track
-#   - traktor
-#  roles:
-#    - php
-
 #- name: install common voc_encoders stuff
 #  hosts: encoder
  ## tags:
@@ -169,15 +161,3 @@
 #  roles:
 #   - voc_encoders
 #   - voc_mixer
-
-# - name: install voc tracker
-#   hosts: tracker
-#   tags:
-#    - voc
-#    - config
-#    - pipeline
-#    - tracker
-#    - track
-#    - traktor
-#   roles:
-#     - voc_tracker
