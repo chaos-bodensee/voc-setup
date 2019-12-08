@@ -21,7 +21,7 @@ Eine Übersicht hierzu gibt es auf [overview/36c3/README.md](https://github.com/
  + Kabel:
    - 5x kurze SDI kabel *(ca. 1M)*
    - 2x längere SDI Kabel *(~20M?)*
-   - 2x billige 5M Kabel *(besser NICHT verwenden)*
+   - 2x billige SDI 5M Kabel *(besser NICHT verwenden)*
    - 3x Micro-HDMI <-> HDMI Kabel *(für L3D's Kamera)*
  + Kamera:
    - Panasonic HC X909 *(mit Netzteil und Mikrofon)*
