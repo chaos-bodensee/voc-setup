@@ -140,14 +140,6 @@
   roles:
     - fonts
  
-- name: Install crs-tools
-  hosts: all
-  tags: 
-   - crs
-   - crs-tools
-  roles:
-  - crs-tools
-
 - name: install common voc_encoders stuff
   hosts: encoder
   tags:
