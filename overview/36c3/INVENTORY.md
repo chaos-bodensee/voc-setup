@@ -2,7 +2,7 @@
 ===================================
 
 Dieses Setup macht das Videos Streaming des [OIO](https://oio.social) am 36c3.
-Eine Übersicht hierzu gibt es auf [overview/36c3.md](https://github.com/chaos-bodensee/voc-setup/blob/master/overview/36c3/README.md)
+Eine Übersicht hierzu gibt es auf [overview/36c3/README.md](https://github.com/chaos-bodensee/voc-setup/blob/master/overview/36c3/README.md)
 
 
 ## Folgende Hardware nehmen wir dafür mit:
