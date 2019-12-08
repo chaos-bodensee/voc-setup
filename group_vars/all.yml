@@ -10,10 +10,10 @@ room_fahrplan_name: 'oio'
 voc_event_acronym: '36c3'
 
 ##  do we want to stream HD
-enable_hd_stream: false
+enable_hd_stream: true
 
 ##  do we want to stream SD
-enable_sd_stream: false
+enable_sd_stream: true
 
 ##  where are we streaming to?
 ##  please think about using an ansible valut for this value!!!
@@ -23,6 +23,9 @@ voc_streaming_endpoint: rtmp://live.ber.c3voc.de:1935/stream/q2
 # good values for different playbooks
 # optimized for the setup in the toolbox bodensee - https://toolbox-bodensee.de
 # Please have a look into the roles for more detailed informations
+
+# where is our voctomix config stored? (We use the master)
+voctomix_config_git: 'https://github.com/chaos-bodensee/voc-config.git'
 
 # good voctomix settings
 encodermode: 'hd-voctomix'
@@ -64,6 +67,11 @@ users:
    - l3d@mobile.l3d.yt
    - l3d@business.wingcon.com
    - l3d@backup-rsa.l3d.yt
+
+# add passwort to OIO User
+accounts_with_password:
+  oio:
+   - "$6$brI2Z1Rp3LVKjnI0$SAOoZlgZtG2fGL6YHAc/bDxevSr3J16NVPXHHiX39vYC/.DQB4ckJCDvOeuyRDy9Et4Txvy8ZCwQr8YCzSJrD."
 
 github_users:
   l3d:
