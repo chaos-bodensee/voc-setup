@@ -104,14 +104,14 @@
 
 
 
-#- name: Install voctomix
-#  hosts: encoder
-#  tags: 
-#   - stream
-#   - voctomix
-#   - config
-#  roles:
-#    - voctomix
+- name: Install voctomix
+  hosts: encoder
+  tags: 
+   - stream
+   - voctomix
+   - config
+  roles:
+    - voctomix
 
 # we stoped to support obs
 # - name: Install obs-studio
@@ -148,16 +148,16 @@
   roles:
   - crs-tools
 
-#- name: install common voc_encoders stuff
-#  hosts: encoder
- ## tags:
-#   - voc
-#   - pipeline
-#   - voc_encoders
-#   - encode
-#   - encoders
-#   - encoder
-#   - config
-#  roles:
-#   - voc_encoders
-#   - voc_mixer
+- name: install common voc_encoders stuff
+  hosts: encoder
+## tags:
+   - voc
+   - pipeline
+   - voc_encoders
+   - encode
+   - encoders
+   - encoder
+   - config
+  roles:
+   - voc_encoders
+#    - voc_mixer

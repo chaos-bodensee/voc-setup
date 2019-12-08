@@ -25,17 +25,14 @@ Eine Übersicht hierzu gibt es auf [overview/36c3/README.md](https://github.com/
    - 3x Micro-HDMI <-> HDMI Kabel *(für L3D's Kamera)*
  + Kamera:
    - Panasonic HC X909 *(mit Netzteil und Mikrofon)*
+ + Maus/Tastatur für Snitt-PC
 
-
-### Ungeklärt ob wir das bringen:
-  + Monitor (mit HDMI zum Video mixen)
-  + Maus/Tastatur für Snitt-PC
-  + Mischpult für Audio
-
-### Wird vom OIO benötigt:
+### Wird vom OIO gestellt:
   + Weitere Kameras *(via SDI oder HDMI)*
   + Audio-Stream via SDI oder via reguläre 1/4-Zoll-Klinkenbuchsen *(für den SDI Audio Injector)*
   + Netzwerk
+  + Monitor (mit HDMI zum Video mixen)
+  + Mischpult für Audio
   + ...
 
 
