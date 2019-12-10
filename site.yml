@@ -100,9 +100,13 @@
     - decklink-debugger
 
 
-
-
-
+- name: Install debugger
+  hosts: encoder
+  tags:
+   - legacy
+   - streamassets
+  roles:
+    - streamassets
 
 - name: Install voctomix
   hosts: encoder
