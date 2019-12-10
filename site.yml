@@ -1,4 +1,11 @@
 ---
+- name: Make sure your ansible is up to date!
+  gather_facts: false
+  hosts: localhost
+  tags: default
+  roles:
+   - version
+
 - name: install python3
   hosts: all
   gather_facts: false
