@@ -41,3 +41,11 @@ The playbook is defined in the ``site.yml`` File. There are some ``roles`` defin
 More details what the roles do are usually documented in the single roles-README. The configuration of all roles are defined in the group_vars ans host_vars.
 
 You can find the inventory in ``ansible/hosts.ini``!
+
+ where is your votomix config?
+------------------
+Our voctomix - voctocore and voctogui config is stored in this git repository:
+
+https://github.com/chaos-bodensee/voc-config.git
+
+It is deployed via this ansible and is working together with some images and systemd-scripts that keep everything running smoothly together!

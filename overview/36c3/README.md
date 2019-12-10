@@ -16,3 +16,15 @@ Für technische Fragen an das Setup bitte an [Adorfer](https://wiki.freifunk.net
 
 ![DEVICE SRC](device_src.svg "Gerätequellen")
 
+ Change configuration?
+-----------------
+To deploy new configuration via ansible, simple run the ``site.yml` from the root of this git repository:
+```
+pip3 install --user ansible
+ansible-playbook site.yml
+```
+
+**DON'T FORGET TO COMMIT AND PUSH YOUR CHANGES!**
+
+To modify the voctomix (core or gui) config, do it in this repo:
+https://github.com/chaos-bodensee/voc-config.git
