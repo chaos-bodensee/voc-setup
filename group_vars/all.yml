@@ -13,7 +13,7 @@ voc_event_acronym: '36c3'
 enable_hd_stream: true
 
 ##  do we want to stream SD
-enable_sd_stream: true
+enable_sd_stream: false
 
 ##  where are we streaming to?
 ##  please think about using an ansible valut for this value!!!
