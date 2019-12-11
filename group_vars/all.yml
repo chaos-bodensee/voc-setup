@@ -100,6 +100,8 @@ username: oio
 obs_user: '{{ username }}'
 i3wm_user: '{{ username }}'
 copy_to_user: '{{ username }}'
+voctomix_user: '{{ username }}'
+voctomix_group: '{{ username }}'
 
 # Font for the Toolbox
 # primarly needed for OBS
@@ -164,3 +166,4 @@ fonts_shared:
 temporarily_disable_screensaver: false
 base_pkg_non_free_firmware: true
 base_pkg_contrib: true
+create_ansible_dir: true
