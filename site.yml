@@ -165,3 +165,10 @@
   roles:
    - voc_encoders
    - voc_mixer
+
+- name: deploy control-server
+  hosts: encoder
+  tags:
+   - control-server
+  roles:
+    - control-server
