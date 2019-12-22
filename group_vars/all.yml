@@ -40,6 +40,8 @@ admins:
   - l3d
   - wolf
   - adorfer
+  - Pl4st3
+  - oe1rfc
 
 users:
   l3d:
@@ -82,6 +84,12 @@ github_users:
   oio:
     - adorfer
     - do1jlr
+    - Pl4st3
+    - oe1rfc
+  oe1rfc:
+    - oe1rfc
+  Pl4st3:
+    - Pl4st3
 
 accounts:
   - l3d
@@ -90,6 +98,8 @@ accounts:
   - wolf
   - adorfer
   - oio
+  - oe1rfc
+  - Pl4st3
 
 # It is recomended to set only_allow_ed25519: true
 only_allow_ed25519: false
