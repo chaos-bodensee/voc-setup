@@ -17,6 +17,7 @@ It is inspired by the awesome [C3VOC](https://c3voc.de) and their [content-manag
 # Clone the Git with submodules
 git clone --recursive https://github.com/ToolboxBodensee/toolbox-voc_ansible.git
 git submodule update --init --recursive
+git config --global submodule.recurse true
 ```
 
 
@@ -28,7 +29,7 @@ git submodule update --init --recursive
  How does our Setup work?
 -------
 We try to explain it in the "[overview/](https://github.com/chaos-bodensee/voc-setup/blob/master/overview/README.md)" Folder. Including a simplified getting-started guide.
-
+Please be carefully when using this setup. It is working mostly... but some love and time is missing to get it fully working!
 
  Questions about this setup?
 ------------------------------
