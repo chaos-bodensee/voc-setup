@@ -55,3 +55,6 @@
 [submodule "roles/version"]
 	path = roles/version
 	url = https://github.com/chaos-bodensee/role-ansible_version.git
+[submodule "roles/ranger"]
+	path = roles/ranger
+	url = https://github.com/chaos-bodensee/role-ranger

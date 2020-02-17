@@ -14,8 +14,6 @@
     - install_python
   tags:
     - default
-  vars:
-    - ansible_ssh_user: 'l3d'
 
 - name: Apply basic ssh config on all hosts
   hosts: all
@@ -31,8 +29,6 @@
     - manage-users
     - ssh_authorized_keys
     - sshd
-  vars: 
-    - ansible_ssh_user: 'l3d'
 
 - name: Apply common basic config on all hosts
   hosts: all
@@ -49,6 +45,7 @@
     - home_environment
     - base-packages
     - copy_files
+    - ranger
 
 - name: stay awake
   hosts: all
@@ -108,31 +105,31 @@
     - decklink-debugger
 
 
-- name: Install debugger
-  hosts: encoder
-  tags:
-   - legacy
-   - streamassets
-  roles:
-    - streamassets
+#- name: Install streamassets
+#  hosts: encoder
+#  tags:
+#   - legacy
+#   - streamassets
+#  roles:
+#    - streamassets
 
-- name: Install voctomix
+#- name: Install voctomix
+#  hosts: encoder
+#  tags: 
+#   - stream
+#   - voctomix
+#   - config
+#  roles:
+#    - voctomix
+
+# we stoped to support obs
+- name: Install obs-studio
   hosts: encoder
   tags: 
    - stream
-   - voctomix
-   - config
+   - obs
   roles:
-    - voctomix
-
-# we stoped to support obs
-# - name: Install obs-studio
-#   hosts: encoder
-#   tags: 
-#    - stream
-#    - obs
-#   roles:
-#     - obs-studio
+    - obs-studio
 
 # - name: Install obs-studio setup
 #   hosts: encoder
@@ -152,23 +149,23 @@
   roles:
     - fonts
  
-- name: install common voc_encoders stuff
-  hosts: encoder
-  tags:
-   - voc
-   - pipeline
-   - voc_encoders
-   - encode
-   - encoders
-   - encoder
-   - config
-  roles:
-   - voc_encoders
-   - voc_mixer
-
-- name: deploy control-server
-  hosts: encoder
-  tags:
-   - control-server
-  roles:
-    - control-server
+#- name: install common voc_encoders stuff
+#  hosts: encoder
+#  tags:
+#   - voc
+#   - pipeline
+#   - voc_encoders
+#   - encode
+#   - encoders
+#   - encoder
+#   - config
+#  roles:
+#   - voc_encoders
+#   - voc_mixer
+#
+#- name: deploy control-server
+#  hosts: encoder
+#  tags:
+#   - control-server
+#  roles:
+#    - control-server
