@@ -17,7 +17,7 @@
 
 - name: Apply basic ssh config on all hosts
   hosts: all
-  tags: 
+  tags:
    - auth
    - ssh
    - ssh_authorized_keys
@@ -32,7 +32,7 @@
 
 - name: Apply common basic config on all hosts
   hosts: all
-  tags: 
+  tags:
    - auth
    - base
    - base_packages
@@ -59,7 +59,7 @@
  
 - name: Install useful tools
   hosts: all
-  tags: 
+  tags:
    - base
    - base-special
    - install-git-lfs
@@ -70,7 +70,7 @@
 
 - name: Install i3wm
   hosts: all
-  tags: 
+  tags:
    - base
    - os
    - i3wm
@@ -85,7 +85,7 @@
 
 - name: Install video drivers
   hosts: encoder
-  tags: 
+  tags:
    - driver
    - blackmagic
    - base-encoder
@@ -98,7 +98,7 @@
 
 - name: Install debugger
   hosts: encoder
-  tags: 
+  tags:
    - debug
    - blackmagic
   roles:
@@ -115,7 +115,7 @@
 
 #- name: Install voctomix
 #  hosts: encoder
-#  tags: 
+#  tags:
 #   - stream
 #   - voctomix
 #   - config
@@ -125,7 +125,7 @@
 # we stoped to support obs
 - name: Install obs-studio
   hosts: encoder
-  tags: 
+  tags:
    - stream
    - obs
   roles:
@@ -142,7 +142,7 @@
 
 - name: Install Toolbox font
   hosts: all
-  tags: 
+  tags:
    - font
    - fonts
    - obs
