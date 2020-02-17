@@ -1,3 +1,5 @@
+[![MIT License](https://raw.githubusercontent.com/chaos-bodensee/voc-setup/master/.github/license.svg?sanitize=true)](https://github.com/chaos-bodensee/voc-setup/blob/master/LICENSE)
+
  Video Streaming - Ansible Setup
 ====================================
 Ansible Setup for the VOC-Setup *(Video Operation Center)* from the [Toolbox Bodensee e.V.](https://toolbox-bodensee.de/).
