@@ -58,3 +58,6 @@
 [submodule "roles/ranger"]
 	path = roles/ranger
 	url = https://github.com/chaos-bodensee/role-ranger
+[submodule "roles/obs-studio"]
+	path = roles/obs-studio
+	url = git@github.com:chaos-bodensee/role_obs-studio.git

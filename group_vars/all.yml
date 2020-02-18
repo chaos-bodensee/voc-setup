@@ -58,10 +58,6 @@ users:
   raoul:
    - raoul@ccczh
 
-github_users:
-  l3d:
-    - do1jlr
-
 accounts:
   - l3d
   - raoul

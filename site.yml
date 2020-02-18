@@ -124,12 +124,16 @@
 
 # we stoped to support obs
 - name: Install obs-studio
+  become: true
   hosts: encoder
   tags:
    - stream
    - obs
-  roles:
-    - obs-studio
+  tasks:
+    - name: install obs
+      package:
+        name: obs-studio
+        state: present
 
 # - name: Install obs-studio setup
 #   hosts: encoder
