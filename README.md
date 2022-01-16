@@ -1,5 +1,8 @@
 [![MIT License](https://raw.githubusercontent.com/chaos-bodensee/voc-setup/master/.github/license.svg?sanitize=true)](https://github.com/chaos-bodensee/voc-setup/blob/master/LICENSE)
 
+:warning: because there are a lot of serious changes in voctomix v2 compared to v1, this project is no longer maintained and we now use OBS-Studio for video streaming and recording.
+
+
  Video Streaming - Ansible Setup
 ====================================
 Ansible Setup for the VOC-Setup *(Video Operation Center)* from the [Toolbox Bodensee e.V.](https://toolbox-bodensee.de/).
